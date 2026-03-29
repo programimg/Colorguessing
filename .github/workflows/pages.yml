@@ -1,0 +1,16 @@
+name: Configure GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  configure-pages:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+    - name: Configure GitHub Pages
+      uses: actions/configure-pages@v4
