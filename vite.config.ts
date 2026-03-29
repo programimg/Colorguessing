@@ -13,11 +13,11 @@ export default defineConfig(async () => {
   } catch {}
   return { 
     plugins,
+    base: '/Colorguessing/',
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src')
       }
-    },
-    base: '/Colorguessing/'
+    }
   };
 })
