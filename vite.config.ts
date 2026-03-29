@@ -18,6 +18,6 @@ export default defineConfig(async () => {
         '@': path.resolve(__dirname, './src')
       }
     },
-    base: '/color-memory-game/'
+    base: '/colorguessing/'
   };
 })
