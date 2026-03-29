@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "buttons-ctas": {
+      "source": "dylantarre/animation-principles",
+      "sourceType": "github",
+      "computedHash": "7efdb9dec1f3a730fba31f94651a94fe929efc7dc4f6f34aedada83fd2b91dac"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "516bd2154eb843a8240e43d5b285229129853114ad7075a5e141e1c08e408c84"
+    }
+  }
+}

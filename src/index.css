@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #334155;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --color-slate-950: #020617;
+  --color-slate-900: #0f172a;
+  --color-slate-800: #1e293b;
+  --color-slate-700: #334155;
+  --color-slate-600: #475569;
+  --color-slate-500: #64748b;
+  --color-slate-400: #94a3b8;
+  --color-slate-300: #cbd5e1;
+  --color-rose-400: #fb7185;
+  --color-rose-500: #f43f5e;
+  --color-violet-400: #a78bfa;
+  --color-violet-500: #8b5cf6;
+  --color-cyan-400: #22d3ee;
+  --color-cyan-500: #06b6d4;
+  --color-amber-400: #fbbf24;
+  --color-emerald-400: #34d399;
+  --color-emerald-500: #10b981;
+  --color-custom-500: #877F7F;
+  --color-custom-600: #6B073B;
+  --color-custom-700: #939E90;
+  --background: #E8E8E8;
+  --foreground: #121212;
+  --card: #F5F5F5;
+  --card-foreground: #121212;
+  --popover: #F5F5F5;
+  --popover-foreground: #121212;
+  --primary: #121212;
+  --primary-foreground: #FFFFFF;
+  --secondary: #D8D8D8;
+  --secondary-foreground: #121212;
+  --muted: #D8D8D8;
+  --muted-foreground: #505050;
+  --accent: #D8D8D8;
+  --accent-foreground: #121212;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #C0C0C0;
+  --input: #C0C0C0;
+  --ring: #909090;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: #1a1a1a;
+  --foreground: #F5F5F5;
+  --card: #262626;
+  --card-foreground: #F5F5F5;
+  --popover: #262626;
+  --popover-foreground: #F5F5F5;
+  --primary: #F5F5F5;
+  --primary-foreground: #1a1a1a;
+  --secondary: #404040;
+  --secondary-foreground: #F5F5F5;
+  --muted: #404040;
+  --muted-foreground: #a3a3a3;
+  --accent: #404040;
+  --accent-foreground: #F5F5F5;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #404040;
+  --input: #404040;
+  --ring: #737373;
+}
+
+html {
+  font-family: 'Outfit', system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--background) !important;
+  color: var(--foreground);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
