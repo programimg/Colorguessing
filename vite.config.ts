@@ -18,6 +18,6 @@ export default defineConfig(async () => {
         '@': path.resolve(__dirname, './src')
       }
     },
-    base: '/colorguessing/'
+    base: '/Colorguessing/'
   };
 })
