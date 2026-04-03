@@ -1,14 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #334155;
-}
-
 @import "tailwindcss";
 
 @theme {
@@ -32,52 +21,60 @@ html, body {
   --color-custom-500: #877F7F;
   --color-custom-600: #6B073B;
   --color-custom-700: #939E90;
-  --background: #E8E8E8;
-  --foreground: #121212;
-  --card: #F5F5F5;
-  --card-foreground: #121212;
-  --popover: #F5F5F5;
-  --popover-foreground: #121212;
-  --primary: #121212;
-  --primary-foreground: #FFFFFF;
-  --secondary: #D8D8D8;
-  --secondary-foreground: #121212;
-  --muted: #D8D8D8;
-  --muted-foreground: #505050;
-  --accent: #D8D8D8;
-  --accent-foreground: #121212;
+  --background: #f7f7fb;
+  --foreground: #0b1020;
+  --card: #ffffff;
+  --card-foreground: #0b1020;
+  --popover: #ffffff;
+  --popover-foreground: #0b1020;
+  --primary: #0b1020;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f2f8;
+  --secondary-foreground: #0b1020;
+  --muted: #f1f2f8;
+  --muted-foreground: #4b5563;
+  --accent: #eef0f8;
+  --accent-foreground: #0b1020;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: #C0C0C0;
-  --input: #C0C0C0;
-  --ring: #909090;
-  --radius: 0.5rem;
+  --border: rgba(15, 23, 42, 0.12);
+  --input: rgba(15, 23, 42, 0.14);
+  --ring: color-mix(in oklab, var(--color-cyan-500) 55%, #ffffff);
+  --radius: 1rem;
+  --shadow-soft: 0 10px 24px rgba(15, 23, 42, 0.10);
+  --shadow-card: 0 18px 50px rgba(15, 23, 42, 0.12);
 }
 
 .dark {
-  --background: #1a1a1a;
-  --foreground: #F5F5F5;
-  --card: #262626;
-  --card-foreground: #F5F5F5;
-  --popover: #262626;
-  --popover-foreground: #F5F5F5;
-  --primary: #F5F5F5;
-  --primary-foreground: #1a1a1a;
-  --secondary: #404040;
-  --secondary-foreground: #F5F5F5;
-  --muted: #404040;
-  --muted-foreground: #a3a3a3;
-  --accent: #404040;
-  --accent-foreground: #F5F5F5;
+  --background: #0b1020;
+  --foreground: #eef2ff;
+  --card: #0f172a;
+  --card-foreground: #eef2ff;
+  --popover: #0f172a;
+  --popover-foreground: #eef2ff;
+  --primary: #eef2ff;
+  --primary-foreground: #0b1020;
+  --secondary: rgba(148, 163, 184, 0.12);
+  --secondary-foreground: #eef2ff;
+  --muted: rgba(148, 163, 184, 0.12);
+  --muted-foreground: rgba(238, 242, 255, 0.72);
+  --accent: rgba(148, 163, 184, 0.16);
+  --accent-foreground: #eef2ff;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: #404040;
-  --input: #404040;
-  --ring: #737373;
+  --border: rgba(226, 232, 240, 0.12);
+  --input: rgba(226, 232, 240, 0.16);
+  --ring: color-mix(in oklab, var(--color-cyan-400) 60%, #ffffff);
+  --shadow-soft: 0 12px 30px rgba(0, 0, 0, 0.22);
+  --shadow-card: 0 18px 50px rgba(0, 0, 0, 0.25);
 }
 
 html {
   font-family: 'Outfit', system-ui, sans-serif;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
 }
 
 body {
@@ -86,4 +83,18 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  line-height: 1.5;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--color-amber-400) 35%, transparent);
+}
+
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+}
+
+html.dark {
+  color-scheme: dark;
 }
